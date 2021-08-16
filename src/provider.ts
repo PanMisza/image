@@ -18,7 +18,8 @@ const BuiltInProviders = [
   'static',
   'twicpics',
   'storyblok',
-  'vercel'
+  'vercel',
+  'imgproxy'
 ]
 
 export const providerSetup: Record<string, ProviderSetup> = {

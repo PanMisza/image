@@ -255,7 +255,42 @@ export const providers: Provider[] = [
       {
         src: 'colors.jpg',
         width: 750,
-        quality: 75
+        quality: 75,
+        operations: { rotate: 90 }
+      }
+    ]
+  },
+  // imgproxy
+  {
+    name: 'imgproxy',
+    samples: [
+      {
+        src: 'https://source.unsplash.com/_04AAMhjm_M/',
+        alt: 'Format and quality',
+        width: 300,
+        height: 300,
+        quality: 25,
+        format: 'webp'
+      },
+      {
+        src: 'https://source.unsplash.com/_i9RzVhTghk/',
+        alt: 'Custom size and gravity',
+        width: 300,
+        height: 300,
+        fit: 'fill',
+        modifiers: {
+          gravity: ['sowe', 10, 10],
+          blur: 4
+        }
+      },
+      {
+        src: 'https://source.unsplash.com/pj3w1JpzAkk/',
+        alt: 'Padding and rotate',
+        width: 300,
+        modifiers: {
+          padding: [20, 40],
+          rotate: 180
+        }
       }
     ]
   }
